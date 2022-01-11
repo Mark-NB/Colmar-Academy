@@ -1,0 +1,232 @@
+@font-face {
+    font-family: 'FiraSansExtraCondensed' ;
+    src: url('../fonts/FiraSansExtraCondensed-Regular.ttf');
+}
+
+/*main styles*/
+html {
+    font-family: FiraSansExtraCondensed, sans-serif;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 40px;
+}
+
+h2 {
+    margin: 26.8px 0px;
+}
+
+h3 {
+    margin: 8px 0px;
+}
+
+
+/*Fixed header sectiom*/
+header {
+    width: 100%;
+    height: 64px;
+    background-color: white;
+    opacity: 0.9;
+    position: fixed;
+    z-index: 10;
+}
+
+#page-header{
+    display: flex;
+    height: 64px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#header-left {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 24px;
+    font-size: 32px;
+}
+
+#header-left p {
+    margin: 0;
+}
+
+#header-icon {
+    height: 54px;
+}
+
+#header-left-text1 {
+
+}
+
+#header-left-text2 {
+    color: grey;
+}
+
+#header-right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    margin-right: 8px;
+}
+
+#header-right p {
+    margin: 16px;
+    font-size: 1.25em;
+}
+
+/*Banner section*/
+#signup-section {
+    background-color: #d8d8d8;
+    padding: 64px 0 0 0;
+    display: flex;
+    min-width: 100%;
+    align-items: center;
+}
+
+#signup-section-left {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    margin: 32px 0px 32px 24px;
+}
+
+#signup-picture {
+    width: 100%;
+    height: auto;
+}
+
+#signup-section-right {
+    width: 40%;
+    margin: 32px 24px 32px 0px;
+}
+
+#signup-text {
+    margin: 0 24px;
+}
+#signup-text h1 {
+
+}
+
+#signup-section a {
+    text-decoration: none;
+}
+
+#signup-section-right p {
+    text-align: center;
+    color: white;
+    background-color: #4a4a4a;
+    padding: 8px 0px;
+}
+
+/*Information section*/
+#information-section {
+    background-color: white;
+    display: flex;
+    min-width: 100%;
+    align-items: flex-start;
+}
+
+#information-section-left {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    align-items: flex-start;
+    margin: 32px 0px 32px 24px;
+}
+
+#information-picture {
+    width: 100%;
+    height: auto;
+}
+
+#information-section-left h1 {
+    margin: 32px 0px 0px;
+}
+
+#information-section-left p {
+    margin: 24px 0px 0px;
+}
+
+#information-section-left h4 {
+    margin: 32px 0px 0px 0px;
+}
+
+#information-section-right {
+    width: 40%;
+    height: auto;
+    margin: 16px 24px 32px 0px;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.info-block {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin: 0px 24px;
+}
+
+.info-block img {
+    height: auto;
+    width: 35%;
+    margin: 16px;
+}
+
+.info-block p {
+    margin: 8px 0px;
+}
+
+#learning-section {
+    padding: 0 56px;
+    background-color: #d8d8d8;
+}
+
+#learning-text {
+    margin: auto;
+    padding: 32px 0px;
+    text-align: center;
+}
+
+#learning-text h1 {
+    margin: 0px;
+}
+
+.learning-center {
+    display: flex;
+    width: 100%;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.learning-blocks {
+    background-color: white;
+    min-width: 25%;
+    display: flex;
+    flex-flow: column;
+  
+    margin: 0px 16px 32px 16px;
+
+}
+
+.learning-blocks img {
+    width: 100%;
+    height: auto;
+}
+
+.learning-text {
+    margin: 16px 16px 24px 16px;
+}
+
+.learning-text p {
+    margin: 8px 0px;
+}
+
