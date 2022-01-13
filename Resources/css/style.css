@@ -69,10 +69,6 @@ header {
     height: 54px;
 }
 
-#header-left-text1 {
-
-}
-
 #header-left-text2 {
     color: grey;
 }
@@ -123,9 +119,6 @@ header {
 
 #signup-text {
     margin: 0 24px;
-}
-#signup-text h1 {
-
 }
 
 #signup-section a {
@@ -243,9 +236,7 @@ header {
     min-width: 25%;
     display: flex;
     flex-flow: column;
-  
     margin: 0px 16px 32px 16px;
-
 }
 
 .learning-blocks img {
@@ -440,7 +431,6 @@ footer {
 
     #learning-section p {
         display: none;
-
     }
 
     .learning-center {
@@ -454,7 +444,6 @@ footer {
 
     .learning-text {
         margin: 0;
-        
         background-color: #d8d8d8;
         padding: 16px 0 24px 16px;
         margin: 8px 16px 8px 16px;
@@ -504,11 +493,4 @@ footer {
     #footer-section-right {
         display: none;
     }
-
-
-
 }
-
-
-
-
