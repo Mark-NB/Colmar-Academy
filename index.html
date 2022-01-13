@@ -18,10 +18,16 @@
                 <p id="header-left-text2">ACADEMY</p>
             </div>
             <div id="header-right">
-                <p>On Campus</p>
-                <p>Online</p>
-                <p>For Companies</p>
-                <p>Sign In</p>
+                <a href="index.html" role="link"><p>Campus</p></a> <!--replace link-->
+                <a href="index.html" role="link"><p>Online</p></a> <!--replace link-->
+                <a href="index.html" role="link"><p>For Companies</p></a> <!--replace link-->
+                <a href="index.html" role="link"><p>Sign In</p></a> <!--replace link-->
+            </div>
+            <div id="header-mobile">
+                <a href="index.html" role="link"> <img src="./Resources/images/ic-logo.svg" alt="Colmar logo"></a> <!--replace link-->
+                <a href="index.html" role="link"> <img src="./Resources/images/ic-on-campus.svg" alt="Campus icon"></a> <!--replace link-->
+                <a href="index.html" role="link"><img src="./Resources/images/ic-online.svg" alt="Online icon"></a> <!--replace link-->
+                <a href="index.html" role="link"><img src="./Resources/images/ic-login.svg" alt="Login icon"></a> <!--replace link-->
             </div>
         </div>
     </header>
@@ -51,13 +57,15 @@
         <div id="information-section-right">
             <div class="info-block">
                 <img class="info-image" src="./Resources/images/information-orientation.jpg" alt="a picture of people walking down a path">
+                <img class="info-image-mobile" src="./Resources/images/information-orientation-mobile.jpg" alt="a picture of people walking down a path">
                 <div>
                     <h3>Orientation date</h3>                        <p>Tue 10/11 & Wed 10/12: 8am-3pm</p>
                     <a href="index.html"><p class="link">Read more</p></a> <!--replace link-->
                 </div>
             </div>
-            <div class="info-block">
+            <div class="info-block" id="info-block-mobile-spacer">
                 <img class="info-image" src="./Resources/images/information-campus.jpg" alt="a picture of campus">
+                <img class="info-image-mobile" src="./Resources/images/information-campus-mobile.jpg" alt="a picture of campus">
                 <div>
                     <h3>Our Campus</h3>
                     <p>Find which campus is close by you</p>                        <a href="index.html"><p class="link">Read more</p></a> <!--replace link-->
@@ -65,6 +73,7 @@
             </div>
             <div class="info-block">
                 <img class="info-image" src="./Resources/images/information-guest-lecture.jpg" alt="a picture of a lecturer">
+                <img class="info-image-mobile" src="./Resources/images/information-guest-lecture-mobile.jpg" alt="a picture of a lecturer">
                 <div>
                     <h3>Our Guest Lecture</h3>
                     <p>Join a keynote with Oliver Sack about music in medical treatment</p>
@@ -131,5 +140,47 @@
             </div>
         </div>
     </div>
+
+    <div id="thesis-text">
+        <h1>Thesis exhibit</h1>
+    </div>
+    <div id="thesis-section" role="main">
+        <div id="thesis-section-left">
+            <video width="100%" src="./Resources/videos/thesis.mp4" autoplay loop muted playsinline alt="a video about a thesis"></video> 
+            <h3>Reimagine urban</h3>
+            <p>Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus,
+             nec consequat neque.Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget
+             magna laoreet, efficitiur dolor consequat, tristique ligula."</p>
+            </div>
+        <div id="thesis-section-right">
+            <div class="info-block">
+                <img class="info-image" src="./Resources/images/thesis-fisma.jpg" alt="a picture of making a thesis">
+                <div>
+                    <h3>Fisma: Design and Prototype</h3>                        
+                    <p>Designer showcase of new prototype product</p>
+                </div>
+            </div>
+            <div class="info-block">
+                <img class="info-image" src="./Resources/images/thesis-now-and-then.jpg" alt="a picture of skyscrapers">
+                <div>
+                    <h3>Now and then</h3>
+                    <p>Research study about New York</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div id="footer-section">
+            <div id="footer-section-left">
+                <h5>&copy; 2016 Colmar Academy. All rights reserved</h5>
+            </div>
+            <div id="footer-section-right">
+                <a href="index.html"><h5>Terms</h5></a> <!--replace link-->
+                <a href="index.html"><h5>Privacy</h5></a> <!--replace link-->
+            </div>
+        </div>
+    </footer>
+
 </body>
 </html>

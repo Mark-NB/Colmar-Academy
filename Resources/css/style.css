@@ -22,13 +22,25 @@ h3 {
     margin: 8px 0px;
 }
 
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: black;
+}
+
+a:hover {
+    color: coral;
+    font-size: 1.2em;
+    transition: 200ms ease-in;
+}
 
 /*Fixed header sectiom*/
 header {
     width: 100%;
     height: 64px;
     background-color: white;
-    opacity: 0.9;
     position: fixed;
     z-index: 10;
 }
@@ -76,6 +88,10 @@ header {
     font-size: 1.25em;
 }
 
+#header-mobile {
+    display: none;
+}
+
 /*Banner section*/
 #signup-section {
     background-color: #d8d8d8;
@@ -113,6 +129,15 @@ header {
 
 #signup-section a {
     text-decoration: none;
+    font-size: 1em;
+}
+
+#signup-section p:hover{
+    background-color: white;
+    color: #4a4a4a;
+    font-weight: bold;
+    text-decoration: underline ;
+    transition: 350ms ease-out;
 }
 
 #signup-section-right p {
@@ -162,11 +187,11 @@ header {
     margin: 16px 24px 32px 0px;
     display: flex;
     flex-flow: column;
-    justify-content: space-between;
     align-items: flex-start;
 }
 
 .info-block {
+    min-width: 97%;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -180,10 +205,15 @@ header {
     margin: 16px;
 }
 
+.info-image-mobile {
+    display: none;
+}
+
 .info-block p {
     margin: 8px 0px;
 }
 
+/*learning section*/
 #learning-section {
     padding: 0 56px;
     background-color: #d8d8d8;
@@ -229,4 +259,255 @@ header {
 .learning-text p {
     margin: 8px 0px;
 }
+
+#thesis-text {
+    margin: auto;
+    padding: 32px 0px 16px 0px;
+    text-align: center;
+}
+
+/*thesis section*/
+#thesis-text h1 {
+    margin: 0;
+}
+
+#thesis-section {
+    background-color: white;
+    display: flex;
+    min-width: 100%;
+    align-items: flex-start;
+}
+
+#thesis-section-left {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    align-items: flex-start;
+    margin: 16px 0px 32px 24px;
+}
+
+#thesis-section-left h3 {
+    margin: 24px 0px 8px 0px;
+}
+
+#thesis-section-left p {
+    margin: 8px 0px 32px 0px;
+}
+
+#thesis-section-right {
+    width: 40%;
+    height: auto;
+    margin: 0px 24px 32px 0px;
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+}
+
+/*non fixed footer*/
+footer {
+    border-top: #d8d8d8 solid 1px;
+}
+
+#footer-section {
+    display: flex;
+    align-content: flex-start;
+    justify-content: space-between;
+}
+
+#footer-section-left {
+    margin: 16px 0px 32px 12px;
+}
+
+#footer-section-right {
+    display: flex;
+    align-content: flex-start;
+    justify-content: flex-end;
+    flex-wrap: nowrap;
+    margin: 16px 12px 32px 0px;
+}
+
+#footer-section h5 {
+    margin: 0px 12px; 
+}
+
+/*mobile adjustments*/
+@media only screen and (max-width: 480px) {
+    
+    /*fixed header mobile*/
+    #header-left {
+        display: none;
+    }
+
+    #header-right {
+        display: none;
+    }
+
+    #header-mobile {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: stretch;
+        margin: 8px 0px;
+    }
+
+    #header-mobile img {
+        height: 100%;
+    }
+
+    /*signup section mobile*/
+    #signup-section {
+        flex-flow: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    #signup-section-left {
+        width: 100%;
+        margin: 0 0 0 0;
+    }
+
+    #signup-section-right {
+        width: 100%;
+        margin: 5.2px 0 16px 0;
+    }
+
+    #signup-section-right h2 {
+        margin: 32px 0 24px 0px;
+    }
+
+    #signup-text {
+        margin: 0 16px;
+    }
+
+    /*information section mobile*/
+    #information-section-left {
+        display: none;
+    }
+
+    #information-section-right {
+        width: 100%;
+        margin: 16px 16px 32px 16px;
+    }
+
+    .info-block {
+        width: 100%;
+        margin: 0;
+        flex-flow: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .info-image {
+        display: none;
+    }
+
+    .info-image-mobile {
+        display: flex;
+        width: 100%;
+    }
+
+    .info-block img {
+        width: 100%;
+        height: auto;
+        margin: 0;
+    }
+
+    .info-block h3 {
+        margin: 24px 0 0 16px;
+    }
+
+    .info-block p {
+        margin: 6px 0 0 16px;
+    }
+
+    #info-block-mobile-spacer {
+        margin: 64px 0 64px 0;
+    }
+
+    /*learning section mobile*/
+    #learning-section {
+        background-color: white;
+        border-top: #d8d8d8 solid 1px;
+        border-bottom: #d8d8d8 solid 1px;
+        padding: 0 0 32px 0;
+    }
+
+    #learning-section img {
+        display: none;
+    }
+
+    #learning-section p {
+        display: none;
+
+    }
+
+    .learning-center {
+        flex-flow: column;
+    }
+
+    .learning-blocks {
+        margin: 0;
+        width: 100%;
+    }
+
+    .learning-text {
+        margin: 0;
+        
+        background-color: #d8d8d8;
+        padding: 16px 0 24px 16px;
+        margin: 8px 16px 8px 16px;
+    }
+
+    .learning-text h3 {
+        margin: 0;   
+    }
+
+    /*thesis mobile section*/ /*note that in the mobile design specc, Thesis exhibit shows as Thesis exhibits. I chose to ignore this*/
+    #thesis-text {
+        padding: 32px 0 0 0; 
+    }
+    
+    #thesis-section-left {
+        width: 100%;
+        margin: 16px 0px 40px 0px;
+    }
+    
+    #thesis-section-right {
+        display: none;
+        margin: 0 0 40px 0;
+    }
+
+    #thesis-section h3 {
+        display: none;
+    }
+
+    #thesis-section p {
+        display: none;
+    }
+
+    /*footer section mobile*/
+    footer {
+        border: none;
+    }
+
+    #footer-section-left h5 {
+        margin: 0 16px;
+    }
+
+    #footer-section-left {
+        width: 100%;
+        margin: 0 0 16px 0;
+    }
+
+    #footer-section-right {
+        display: none;
+    }
+
+
+
+}
+
+
+
 
